@@ -1,7 +1,13 @@
+import { Globalstyle } from "./globalstyle";
 import { Main } from "./Main";
 
 function App() {
-  return <Main />;
+  return (
+    <>
+      <Globalstyle />
+      <Main />
+    </>
+  );
 }
 
 export default App;
