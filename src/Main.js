@@ -4,7 +4,7 @@ import { Home_Section } from "./Home_Section";
 import coding from "./images/coding.png";
 
 const AllWrap = styled.div`
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
 `;
 
@@ -17,7 +17,7 @@ const MainWrap = styled.div`
 `;
 const Left = styled.div`
   margin-left: 100px;
-  width: 50%;
+  width: 45%;
   h3 {
     font-size: 60px;
     font-weight: 900;
@@ -54,6 +54,10 @@ const Resume = styled.div`
   background-color: #353535;
   border-radius: 30px;
   margin-right: 30px;
+  :hover {
+    color: ${mainStyle.point};
+    cursor: pointer;
+  }
 `;
 const Git = styled.div`
   display: flex;
@@ -63,6 +67,10 @@ const Git = styled.div`
   height: 60px;
   border-radius: 50%;
   background-color: #353535;
+  :hover {
+    color: ${mainStyle.point};
+    cursor: pointer;
+  }
 `;
 
 const Project = styled.div`
