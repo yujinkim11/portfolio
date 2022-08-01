@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { mainStyle } from "./globalstyle";
-import logo from "./images/portlogo.png";
+import logo from "./images/logo.jpg";
 
 const HeaderWrap = styled.div`
   margin-top: 10px;
@@ -17,6 +17,7 @@ const MenuWrap = styled.ul`
   display: flex;
   li {
     font-size: 25px;
+    font-weight: 700;
     margin-left: 50px;
   }
 `;

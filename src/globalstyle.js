@@ -9,14 +9,14 @@ export const Globalstyle = createGlobalStyle`
     ${reset}
    
     body{
-        background: #353535;
-        color: white;
+        background: #eeeeee;
+        color: #353535;
         font-family: 'Noto Sans KR', sans-serif;
         box-sizing: border-box;
         word-break: keep-all;
     }
     a{
         text-decoration: none;
-        color: white;
+        color: #353535;
     }
 `;
