@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mainStyle } from "./globalstyle";
+import { mainStyle } from "./Style/Globalstyle";
 import { Home_Section } from "./Home_Section";
 import coding from "./images/coding.png";
 

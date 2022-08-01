@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mainStyle } from "./globalstyle";
+import { mainStyle } from "./Style/Globalstyle";
 import logo from "./images/logo.jpg";
 
 const HeaderWrap = styled.div`
