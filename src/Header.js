@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
 import logo from "./images/logo.jpg";
+import { Link } from "react-router-dom";
 
 const HeaderWrap = styled.div`
   margin-top: 10px;
@@ -25,14 +26,24 @@ const MenuWrap = styled.ul`
 export const Header = () => {
   return (
     <HeaderWrap>
-      <Logo>
-        <img src={logo} width="220px" height="100px" alt="logo" />
-      </Logo>
+      <Link to={"/"}>
+        <Logo>
+          <img src={logo} width="220px" height="100px" alt="logo" />
+        </Logo>
+      </Link>
       <MenuWrap>
-        <li>HOME</li>
-        <li>ABOUT ME</li>
-        <li>PROJECT</li>
-        <li>CONTACT</li>
+        <Link to={"/"}>
+          <li>HOME</li>
+        </Link>
+        <Link to={"/aboutme"}>
+          <li>ABOUT ME</li>
+        </Link>
+        <Link to={"/project"}>
+          <li>PROJECT</li>
+        </Link>
+        <Link to={"/contact"}>
+          <li>CONTACT</li>
+        </Link>
       </MenuWrap>
     </HeaderWrap>
   );
