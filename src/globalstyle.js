@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
 export const mainStyle = {
-  padding: "0 150px",
+  padding: "0 200px",
 };
 
 export const Globalstyle = createGlobalStyle`

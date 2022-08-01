@@ -5,6 +5,7 @@ const MainWrap = styled.div`
   padding: ${mainStyle.padding};
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 const Left = styled.div`
   width: 50%;
