@@ -20,6 +20,9 @@ const MenuWrap = styled.ul`
     font-size: 25px;
     font-weight: 700;
     margin-left: 50px;
+    :hover {
+      color: ${mainStyle.point};
+    }
   }
 `;
 

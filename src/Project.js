@@ -10,7 +10,8 @@ const Title = styled.h3`
   font-weight: 700;
   text-align: center;
   span {
-    font-size: 60px;
+    font-size: 65px;
+    color: ${mainStyle.point};
   }
 `;
 const Projects = styled.div`
