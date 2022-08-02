@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css/navigation";
 import "swiper/css";
 
 const ProjectWrap = styled.div`
@@ -28,6 +30,7 @@ const SwiperWrap = styled.div`
 
 const ProjectCon = styled.div`
   width: 45%;
+  padding: 0 60px;
 `;
 
 const ProjectTitle = styled.h1`
@@ -72,7 +75,12 @@ export const Project = () => {
       </Title>
 
       <Projects>
-        <Swiper spaceBetween={50} slidesPerView={1}>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          modules={[Navigation]}
+          navigation={{ clickable: true }}
+        >
           <SwiperSlide>
             <SwiperWrap>
               <ProjectCon>
