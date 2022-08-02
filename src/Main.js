@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
-import { Home_Section } from "./Home_Section";
 import coding from "./images/coding.png";
+import { Project } from "./Project";
 
 const AllWrap = styled.div`
-  /* width: 100%; */
   height: 100vh;
 `;
 
@@ -73,10 +72,20 @@ const Git = styled.div`
   }
 `;
 
-const Project = styled.div`
+const ProjectScroll = styled.div`
   margin-top: 150px;
   text-align: center;
   font-size: 26px;
+  margin-bottom: 200px;
+
+  :hover {
+    color: ${mainStyle.point};
+    cursor: pointer;
+  }
+`;
+
+const WhiteSpce = styled.div`
+  height: 250px;
 `;
 
 export const Main = () => {
@@ -101,9 +110,12 @@ export const Main = () => {
             </Img>
           </Right>
         </MainWrap>
-        <Project>⇓ 프로젝트 보러가기 ⇓</Project>
+        <ProjectScroll onClick={() => window.scrollTo({ top: 1400 })}>
+          ⇓ 프로젝트 보러가기 ⇓
+        </ProjectScroll>
+        <Project />
+        <WhiteSpce />
       </AllWrap>
-      <Home_Section />
     </>
   );
 };
