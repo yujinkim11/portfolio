@@ -97,7 +97,7 @@ export const Main = () => {
           </Left>
           <Right>
             <Img>
-              <img src={coding} width="660px" height="660px" alt="coding"></img>
+              <img src={coding} width="660px" height="660px" alt="coding" />
             </Img>
           </Right>
         </MainWrap>
