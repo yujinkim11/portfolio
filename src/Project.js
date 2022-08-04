@@ -4,6 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css";
+import enjoy from "./images/yjmovie.png";
+import login from "./images/yjlogin.png";
+import daelim from "./images/daelim.png";
+import paikdabang from "./images/paikdabang.png";
 
 const ProjectWrap = styled.div`
   padding: ${mainStyle.padding};
@@ -26,6 +30,7 @@ const Projects = styled.div`
 
 const SwiperWrap = styled.div`
   display: flex;
+  margin-bottom: 50px;
 `;
 
 const ProjectCon = styled.div`
@@ -112,7 +117,11 @@ export const Project = () => {
               <ProjectCon>
                 <ProjectTitle>Enjoy!</ProjectTitle>
                 <Team>개인 프로젝트 \ 2022.05~ </Team>
-                <ProjectImg></ProjectImg>
+                <ProjectImg
+                  style={{
+                    background: `url(${enjoy}) no-repeat center / cover`,
+                  }}
+                />
               </ProjectCon>
               <ProjectDetail>
                 <DetailCon>
@@ -142,7 +151,11 @@ export const Project = () => {
               <ProjectCon>
                 <ProjectTitle>로그인 페이지</ProjectTitle>
                 <Team>개인 프로젝트 \ 2022.05~ </Team>
-                <ProjectImg></ProjectImg>
+                <ProjectImg
+                  style={{
+                    background: `url(${login}) no-repeat center / cover`,
+                  }}
+                />
               </ProjectCon>
               <ProjectDetail>
                 <DetailCon>
@@ -203,7 +216,11 @@ export const Project = () => {
               <ProjectCon>
                 <ProjectTitle>빽다방 리뉴얼</ProjectTitle>
                 <Team>개인 프로젝트 \ 2022.05~ </Team>
-                <ProjectImg></ProjectImg>
+                <ProjectImg
+                  style={{
+                    background: `url(${paikdabang}) no-repeat center / cover`,
+                  }}
+                />
               </ProjectCon>
               <ProjectDetail>
                 <DetailCon>
@@ -231,7 +248,11 @@ export const Project = () => {
               <ProjectCon>
                 <ProjectTitle>대림바스 리뉴얼</ProjectTitle>
                 <Team>팀 프로젝트 \ 2022.05~ </Team>
-                <ProjectImg></ProjectImg>
+                <ProjectImg
+                  style={{
+                    background: `url(${daelim}) no-repeat center / cover`,
+                  }}
+                />
               </ProjectCon>
               <ProjectDetail>
                 <DetailCon>
