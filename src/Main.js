@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
 import coding from "./images/coding.png";
 import { Project } from "./Project";
+import { Link } from "react-router-dom";
 
 const AllWrap = styled.div`
   height: 100vh;
@@ -43,6 +44,9 @@ const Button = styled.div`
   display: flex;
   font-size: 20px;
   font-weight: 500;
+  .github {
+    color: white;
+  }
 `;
 const Resume = styled.div`
   display: flex;
@@ -66,6 +70,7 @@ const Git = styled.div`
   height: 60px;
   border-radius: 50%;
   background-color: #353535;
+
   :hover {
     color: ${mainStyle.point};
     cursor: pointer;
@@ -101,7 +106,13 @@ export const Main = () => {
             </Title>
             <Button>
               <Resume>이력서.pdf</Resume>
-              <Git>Git</Git>
+              <a
+                target="_blank"
+                href="https://github.com/yujinkim11"
+                className="github"
+              >
+                <Git>Git</Git>
+              </a>
             </Button>
           </Left>
           <Right>

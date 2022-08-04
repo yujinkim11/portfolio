@@ -42,6 +42,13 @@ const Con = styled.div`
     font-size: 24px;
     font-weight: 500;
   }
+  a {
+    transition: 0.5s;
+    cursor: pointer;
+    :hover {
+      color: ${mainStyle.point};
+    }
+  }
 `;
 
 export const Contact = () => {
@@ -54,7 +61,9 @@ export const Contact = () => {
             부탁드립니다.
           </p>
           <h3>📩</h3>
-          <h4>wowyj26@naver.com</h4>
+          <a href="mailto:wowyj26@naver.com" target="_blank">
+            <h4>wowyj26@naver.com</h4>
+          </a>
         </Con>
       </Box>
     </ContactWrap>

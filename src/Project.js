@@ -68,9 +68,32 @@ const DetailCon = styled.h3`
 
 const Skill = styled.div`
   margin: 50px 0;
+  font-size: 30px;
+  p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
 `;
-const Site = styled.div``;
-const Github = styled.div``;
+
+const Link = styled.div`
+  display: flex;
+  font-size: 40px;
+`;
+const Site = styled.div`
+  margin-right: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  :hover {
+    color: ${mainStyle.point};
+  }
+`;
+const Github = styled.div`
+  transition: 0.5s;
+  cursor: pointer;
+  :hover {
+    color: ${mainStyle.point};
+  }
+`;
 
 export const Project = () => {
   return (
@@ -90,7 +113,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>다이슨 리뉴얼</ProjectTitle>
-                <Team>팀 프로젝트 \ 2022.07~ </Team>
+                <Team>팀 프로젝트 \ 2022.07.29 ~ 진행중</Team>
                 <ProjectImg></ProjectImg>
               </ProjectCon>
               <ProjectDetail>
@@ -105,9 +128,18 @@ export const Project = () => {
                   팀원은 총 4명이였으며, 제가 맡은 역할은 푸터 & 고객지원
                   페이지입니다.
                 </DetailCon>
-                <Skill>사용 언어 REACT, JAVASCRIPT, HTML, CSS</Skill>
-                <Site>사이트 바로가기</Site>
-                <Github>깃허브 바로가기</Github>
+                <Skill>
+                  사용 언어
+                  <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
+                </Skill>
+                <Link>
+                  <Site>
+                    <i class="fa-solid fa-link"></i>
+                  </Site>
+                  <Github>
+                    <i class="fa-brands fa-square-github"></i>
+                  </Github>
+                </Link>
               </ProjectDetail>
             </SwiperWrap>
           </SwiperSlide>
@@ -116,7 +148,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>Enjoy!</ProjectTitle>
-                <Team>개인 프로젝트 \ 2022.05~ </Team>
+                <Team>개인 프로젝트 \ 2022.7.5 ~ 2022.7.20 </Team>
                 <ProjectImg
                   style={{
                     background: `url(${enjoy}) no-repeat center / cover`,
@@ -128,7 +160,6 @@ export const Project = () => {
                   영화/TV프로그램을 볼 수 있는 OTT 사이트를 구현한 사이트입니다.
                   <br />
                   API를 받아와서 컨텐츠 리스트를 보여줄 수 있도록 구현하였고,
-                  <br />
                   반응형 작업이 되어있는 페이지입니다.
                   <br />
                   <br />
@@ -138,10 +169,20 @@ export const Project = () => {
                 <Skill>
                   사용 언어
                   <br />
-                  REACT, JAVASCRIPT, HTML, CSS
+                  <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
-                <Site>사이트 바로가기</Site>
-                <Github>깃허브 바로가기</Github>
+                <Link>
+                  <a target="_blank" href="https://yujinkim11.github.io/enjoy/">
+                    <Site>
+                      <i class="fa-solid fa-link"></i>
+                    </Site>
+                  </a>
+                  <a target="_blank" href="https://github.com/yujinkim11/enjoy">
+                    <Github>
+                      <i class="fa-brands fa-square-github"></i>
+                    </Github>
+                  </a>
+                </Link>
               </ProjectDetail>
             </SwiperWrap>
           </SwiperSlide>
@@ -172,10 +213,21 @@ export const Project = () => {
                 <Skill>
                   사용 언어
                   <br />
-                  REACT, JAVASCRIPT, HTML, CSS
+                  <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
-                <Site>사이트 바로가기</Site>
-                <Github>깃허브 바로가기</Github>
+                <Link>
+                  <Site>
+                    <i class="fa-solid fa-link"></i>
+                  </Site>
+                  <a
+                    target="_blank"
+                    href="https://github.com/yujinkim11/YJ-login"
+                  >
+                    <Github>
+                      <i class="fa-brands fa-square-github"></i>
+                    </Github>
+                  </a>
+                </Link>
               </ProjectDetail>
             </SwiperWrap>
           </SwiperSlide>
@@ -184,7 +236,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>가위바위보 게임</ProjectTitle>
-                <Team>개인 프로젝트 \ 2022.05~ </Team>
+                <Team>개인 프로젝트 \ 2022.07.15 ~ 진행중 </Team>
                 <ProjectImg></ProjectImg>
               </ProjectCon>
               <ProjectDetail>
@@ -197,16 +249,24 @@ export const Project = () => {
                   <br />
                   <br />
                   개인 프로젝트이며, REACT 공부를 더 하기위해 진행한
-                  프로젝트이며 컴퓨터에 랜덤한 값을 가져올 수 있는 함수와,
-                  승패를 가려주는 기능에 대해 공부할 수 있었습니다.
+                  프로젝트이며 컴퓨터에 랜덤한 값을 가져올 수 있는 함수를
+                  익혔고, 승패를 가려주는 작업을 추가할 예정입니다.
                 </DetailCon>
                 <Skill>
                   사용 언어
                   <br />
-                  REACT, JAVASCRIPT, HTML, CSS
+                  <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
-                <Site>사이트 바로가기</Site>
-                <Github>깃허브 바로가기</Github>
+                <Link>
+                  <a
+                    target="_blank"
+                    href="https://github.com/yujinkim11/rockscissorpaper"
+                  >
+                    <Github>
+                      <i class="fa-brands fa-square-github"></i>
+                    </Github>
+                  </a>
+                </Link>
               </ProjectDetail>
             </SwiperWrap>
           </SwiperSlide>
@@ -215,7 +275,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>빽다방 리뉴얼</ProjectTitle>
-                <Team>개인 프로젝트 \ 2022.05~ </Team>
+                <Team>개인 프로젝트 \ 2022.06.17 ~ 2022.07.29 </Team>
                 <ProjectImg
                   style={{
                     background: `url(${paikdabang}) no-repeat center / cover`,
@@ -235,10 +295,22 @@ export const Project = () => {
                 <Skill>
                   사용 언어
                   <br />
-                  HTML, CSS, JAVASCRIPT
+                  <p>REACT, Nodejs, HTML, CSS, JAVASCRIPT</p>
                 </Skill>
-                <Site>사이트 바로가기</Site>
-                <Github>깃허브 바로가기</Github>
+                <Link>
+                  <Site>
+                    <i class="fa-solid fa-link"></i>
+                  </Site>
+                  <a
+                    target="_blank"
+                    href="https://github.com/yujinkim11/paikdabang"
+                  >
+                    {" "}
+                    <Github>
+                      <i class="fa-brands fa-square-github"></i>
+                    </Github>
+                  </a>
+                </Link>
               </ProjectDetail>
             </SwiperWrap>
           </SwiperSlide>
@@ -247,7 +319,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>대림바스 리뉴얼</ProjectTitle>
-                <Team>팀 프로젝트 \ 2022.05~ </Team>
+                <Team>팀 프로젝트 \ 2022.05.06 ~ 2022.06.10 </Team>
                 <ProjectImg
                   style={{
                     background: `url(${daelim}) no-repeat center / cover`,
@@ -258,7 +330,8 @@ export const Project = () => {
                 <DetailCon>
                   대림바스 홈페이지를 리뉴얼한 사이트입니다.
                   <br />
-                  기획, 디자인, 퍼블리싱까지 작업한 사이트입니다.
+                  기획, 디자인, 퍼블리싱까지 작업한 사이트이며 처음으로 진행한
+                  퍼블리싱 프로젝트입니다.
                   <br />
                   팀원은 총 3명이였으며, 제가 맡은 역할은 푸터 & 고객지원 &
                   서비스 페이지입니다.
@@ -266,10 +339,26 @@ export const Project = () => {
                 <Skill>
                   사용 언어
                   <br />
-                  HTML, CSS, JAVASCRIPT
+                  <p>HTML, CSS, JAVASCRIPT</p>
                 </Skill>
-                <Site>사이트 바로가기</Site>
-                <Github>깃허브 바로가기</Github>
+                <Link>
+                  <a
+                    target="_blank"
+                    href="https://yujinkim11.github.io/daelimbath-re/"
+                  >
+                    <Site>
+                      <i class="fa-solid fa-link"></i>
+                    </Site>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/yujinkim11/daelimbath-re"
+                  >
+                    <Github>
+                      <i class="fa-brands fa-square-github"></i>
+                    </Github>
+                  </a>
+                </Link>
               </ProjectDetail>
             </SwiperWrap>
           </SwiperSlide>
