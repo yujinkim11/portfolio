@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactWrap = styled.div`
   height: 80vh;
@@ -52,9 +55,13 @@ const Con = styled.div`
 `;
 
 export const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <ContactWrap>
-      <Box>
+      <Box data-aos="flip-left" data-aos-duration="15000">
         <Con>
           <p>
             구인 또는 궁금한 점이 있으실 경우 아래 <span>메일</span>로 연락

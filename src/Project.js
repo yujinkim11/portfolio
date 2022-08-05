@@ -4,6 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import enjoy from "./images/yjmovie.png";
 import login from "./images/yjlogin.png";
 import daelim from "./images/daelim.png";
@@ -98,9 +102,17 @@ const Github = styled.div`
 `;
 
 export const Project = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <ProjectWrap>
-      <Title>
+      <Title
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="4000"
+      >
         총 <span>6</span>개의 프로젝트가 있습니다.
       </Title>
 
@@ -223,7 +235,13 @@ export const Project = () => {
                 </Skill>
                 <Link>
                   <Site>
-                    <i class="fa-solid fa-link"></i>
+                    <a
+                      target="_blank"
+                      href="https://yujinkim11.github.io/YJ-Login/"
+                    >
+                      {" "}
+                      <i class="fa-solid fa-link"></i>
+                    </a>
                   </Site>
                   <a
                     target="_blank"
@@ -309,7 +327,12 @@ export const Project = () => {
                 </Skill>
                 <Link>
                   <Site>
-                    <i class="fa-solid fa-link"></i>
+                    <a
+                      target="_blank"
+                      href="https://yujinkim11.github.io/paikdabang/"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
                   </Site>
                   <a
                     target="_blank"

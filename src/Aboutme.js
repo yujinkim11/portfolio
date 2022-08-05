@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
 import me from "./images/me.png";
 import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutmeWrap = styled.div``;
 
@@ -133,6 +136,10 @@ const ProjectScroll = styled.div`
 `;
 
 export const Aboutme = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <AboutmeWrap>
       <BoxWrap>
@@ -187,8 +194,10 @@ export const Aboutme = () => {
       </BoxWrap>
       <SkillWrap>
         <Skill>
-          <h3>Skill</h3>
-          <Lang>
+          <h3 data-aos="fade-down" data-aos-duration="2000">
+            Skill
+          </h3>
+          <Lang data-aos="fade-down" data-aos-duration="2000">
             <img
               src="https://t1.daumcdn.net/cfile/tistory/2149683A58CA6BF313"
               width="180px"
@@ -236,7 +245,7 @@ export const Aboutme = () => {
               <span>Nodejs</span>를 사용하여 개발할 수 있습니다.
             </p>
           </Lang>
-          <ImgTool>
+          <ImgTool data-aos="fade-down" data-aos-duration="2000">
             <h3>Image Edit Tool</h3>
             <img
               src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMjFfMTcy/MDAxNTc0MzM0MDc2Nzk0.e8pMq16clsY1YxVLCDkh2L1IOfc9zq5x7XyxzMIkRoAg.B2k1RWDVVRy02emeuUova8tZmyC9Ha6tqN3wKSYdVwog.PNG.nanona3260/2020.png?type=w800"

@@ -1,7 +1,10 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
 import coding from "./images/coding.png";
 import { Project } from "./Project";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AllWrap = styled.div`
   height: 100vh;
@@ -100,10 +103,13 @@ const WhiteSpace = styled.div`
 `;
 
 export const Main = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <AllWrap>
-        <MainWrap>
+        <MainWrap data-aos="fade-down" data-aos-duration="2000">
           <Left>
             <Title>
               <h3>끊임없이 성장하는</h3>
@@ -111,7 +117,14 @@ export const Main = () => {
               <h3>김유진입니다.</h3>
             </Title>
             <Button>
-              <Resume>이력서.pdf</Resume>
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1smkWjyyPrOMoxt_HX-BN9OHJdG99f49J/view?usp=sharing"
+                className="github"
+              >
+                {" "}
+                <Resume>이력서.pdf</Resume>
+              </a>
               <a
                 target="_blank"
                 href="https://github.com/yujinkim11"
