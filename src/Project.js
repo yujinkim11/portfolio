@@ -8,6 +8,8 @@ import enjoy from "./images/yjmovie.png";
 import login from "./images/yjlogin.png";
 import daelim from "./images/daelim.png";
 import paikdabang from "./images/paikdabang.png";
+import dyson from "./images/dyson.png";
+import rsp from "./images/rsp.png";
 
 const ProjectWrap = styled.div`
   padding: ${mainStyle.padding};
@@ -41,7 +43,7 @@ const ProjectCon = styled.div`
 const ProjectTitle = styled.h1`
   font-size: 60px;
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `;
 const Team = styled.p`
   font-size: 20px;
@@ -113,8 +115,12 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>다이슨 리뉴얼</ProjectTitle>
-                <Team>팀 프로젝트 \ 2022.07.29 ~ 진행중</Team>
-                <ProjectImg></ProjectImg>
+                <Team>팀 프로젝트 | 2022.07.29 ~ 진행중</Team>
+                <ProjectImg
+                  style={{
+                    background: `url(${dyson}) no-repeat center / cover`,
+                  }}
+                />
               </ProjectCon>
               <ProjectDetail>
                 <DetailCon>
@@ -148,7 +154,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>Enjoy!</ProjectTitle>
-                <Team>개인 프로젝트 \ 2022.7.5 ~ 2022.7.20 </Team>
+                <Team>개인 프로젝트 | 2022.7.5 ~ 2022.7.20 </Team>
                 <ProjectImg
                   style={{
                     background: `url(${enjoy}) no-repeat center / cover`,
@@ -191,7 +197,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>로그인 페이지</ProjectTitle>
-                <Team>개인 프로젝트 \ 2022.05~ </Team>
+                <Team>개인 프로젝트 | 2022.05~ </Team>
                 <ProjectImg
                   style={{
                     background: `url(${login}) no-repeat center / cover`,
@@ -236,8 +242,12 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>가위바위보 게임</ProjectTitle>
-                <Team>개인 프로젝트 \ 2022.07.15 ~ 진행중 </Team>
-                <ProjectImg></ProjectImg>
+                <Team>개인 프로젝트 | 2022.07.15 ~ 진행중 </Team>
+                <ProjectImg
+                  style={{
+                    background: `url(${rsp}) no-repeat center / cover`,
+                  }}
+                />
               </ProjectCon>
               <ProjectDetail>
                 <DetailCon>
@@ -275,7 +285,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>빽다방 리뉴얼</ProjectTitle>
-                <Team>개인 프로젝트 \ 2022.06.17 ~ 2022.07.29 </Team>
+                <Team>개인 프로젝트 | 2022.06.17 ~ 2022.07.29 </Team>
                 <ProjectImg
                   style={{
                     background: `url(${paikdabang}) no-repeat center / cover`,
@@ -305,7 +315,6 @@ export const Project = () => {
                     target="_blank"
                     href="https://github.com/yujinkim11/paikdabang"
                   >
-                    {" "}
                     <Github>
                       <i class="fa-brands fa-square-github"></i>
                     </Github>
@@ -319,7 +328,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>대림바스 리뉴얼</ProjectTitle>
-                <Team>팀 프로젝트 \ 2022.05.06 ~ 2022.06.10 </Team>
+                <Team>팀 프로젝트 | 2022.05.06 ~ 2022.06.10 </Team>
                 <ProjectImg
                   style={{
                     background: `url(${daelim}) no-repeat center / cover`,

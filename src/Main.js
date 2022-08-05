@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
 import coding from "./images/coding.png";
 import { Project } from "./Project";
-import { Link } from "react-router-dom";
 
 const AllWrap = styled.div`
   height: 100vh;

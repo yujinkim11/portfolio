@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
 import me from "./images/me.png";
+import { Link } from "react-router-dom";
 
 const AboutmeWrap = styled.div``;
 
@@ -8,7 +9,7 @@ const BoxWrap = styled.div`
   padding: ${mainStyle.padding};
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 70px;
 `;
 
 const Left = styled.div`
@@ -18,7 +19,7 @@ const Left = styled.div`
 
 const Right = styled.div`
   width: 800px;
-  margin-left: 50px;
+  margin-left: 80px;
 `;
 const AboutCon = styled.h3`
   h4 {
@@ -31,7 +32,7 @@ const AboutCon = styled.h3`
     line-height: 30px;
     font-weight: 300;
   }
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 `;
 
 const Future = styled.p`
@@ -44,6 +45,7 @@ const Future = styled.p`
   font-size: 20px;
   line-height: 30px;
   font-weight: 300;
+  margin-bottom: 50px;
 `;
 
 const SkillWrap = styled.div`
@@ -52,17 +54,82 @@ const SkillWrap = styled.div`
   padding: ${mainStyle.padding};
   text-align: center;
 `;
-const Skill = styled.div``;
-
-const Lang = styled.div``;
-
-const StudyWrap = styled.div`
-  margin-top: 100px;
-  padding: ${mainStyle.padding};
+const Skill = styled.div`
+  font-size: 40px;
+  font-weight: 700;
 `;
-const Study = styled.div``;
+
+const Lang = styled.div`
+  margin-top: 50px;
+  img {
+    margin-right: 30px;
+    :nth-child(5) {
+      margin-right: 0;
+    }
+  }
+  p {
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+  .first {
+    margin-top: 70px;
+  }
+  span {
+    font-weight: 500;
+    color: ${mainStyle.point};
+  }
+`;
+
+const ImgTool = styled.div`
+  margin-top: 100px;
+  font-size: 40px;
+  font-weight: 700;
+  img {
+    margin-top: 70px;
+    :nth-child(2) {
+      margin-right: 30px;
+    }
+  }
+  p {
+    margin-top: 70px;
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+
+  span {
+    font-weight: 500;
+    color: ${mainStyle.point};
+  }
+`;
+
+const Study = styled.div`
+  h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+`;
+
 const ProjectGo = styled.div`
   text-align: center;
+  margin-top: 500px;
+`;
+
+const ProjectScroll = styled.div`
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 100px;
+
+  :hover {
+    color: ${mainStyle.point};
+    cursor: pointer;
+  }
 `;
 
 export const Aboutme = () => {
@@ -78,16 +145,14 @@ export const Aboutme = () => {
           <AboutCon>
             <h4>안녕하세요. 프론트엔드 개발자 신입 김유진입니다.</h4>
             <p>
-              고등학생때부터 웹사이트에 관심이 많았습니다. <br />
-              사이트들은 어떻게 만들어지는지에 호기심이 생겨서 직접 티스토리를
-              꾸미고 배워가면서
-              <br />
-              제로보드와 php를 이용해서 홈페이지를 직접 만들어본 경험이
-              있습니다.
+              고등학생때부터 사이트들은 어떻게 만들어지는지에 호기심이 생겨서
+              직접 티스토리를 꾸미고 배워가면서 제로보드와 php를 이용해서
+              홈페이지를 직접 만들어본 경험이 있습니다.
               <br />
               그때의 기억을 되살리다 흥미와 뿌듯함을 느끼며 일할수 있는
               프론트엔드 개발자의 매력을 느끼게 되었고 개발자의 꿈을 가지게
               되었습니다.
+              <br />
               <br />
               새로운 것을 배우고 익히는 것에 거부감이 없고 오히려 그 과정에서
               즐거움을 느낍니다.
@@ -110,12 +175,14 @@ export const Aboutme = () => {
             서로에게 도움이 되는 동료가 되고 싶습니다.
             <br />
             그런 동료가 될 수 있도록 노력하며 행동하겠습니다.
-            <br />
-            개인 역량으로는 최근에 Typescript에 관심이 가서 Typescript를
-            공부하고 싶고,
-            <br />
-            Redux를 통해 상태관리를 하는 것도 익혀나갈 예정입니다.
           </Future>
+
+          <Study>
+            <h5>수료 과정</h5>
+            SBS아카데미컴퓨터아트학원 - UIUX 프론트엔드 개발자양성과정
+            <br />
+            (2022.04.12 ~ 2022.07.29)
+          </Study>
         </Right>
       </BoxWrap>
       <SkillWrap>
@@ -124,20 +191,76 @@ export const Aboutme = () => {
           <Lang>
             <img
               src="https://t1.daumcdn.net/cfile/tistory/2149683A58CA6BF313"
-              width="200px"
-              hight="180px"
-            ></img>
-            <img src="" width="200px" hight="180px" />
-            <img src="" width="200px" hight="180px" />
-            <img src="" width="200px" hight="180px" />
-            <img src="" width="200px" hight="180px" />
+              width="180px"
+              height="200px"
+            />
+            <img
+              src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw"
+              width="180px"
+              height="200px"
+            />
+            <img
+              src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo"
+              width="180px"
+              height="200px"
+            />
+            <img
+              src="https://www.nicepng.com/png/detail/222-2224705_react-js-logo.png"
+              width="180px"
+              height="200px"
+            />
+            <img
+              src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FDGM2Y%2FbtqwIi3c40a%2FtbVlnqOBH5ovawaVBCmEF0%2Fimg.png"
+              width="180px"
+              height="200px"
+            />
+            <p className="first">
+              <span>ES6 이상의 문법</span> 사용하여 자바스크립트를 사용할 수
+              있습니다.
+            </p>
+            <br />
+            <p>
+              <span>웹표준 기반 태그</span>를 사용하고, 애니메이션을 사용합니다.
+            </p>
+            <br />
+            <p>
+              React를 사용하여 개발할 수 있고 <span>React Hooks</span>를 사용할
+              수 있습니다.
+            </p>
+            <br />
+            <p>
+              <span>styled-components</span>를 이용하여 개발합니다.
+            </p>
+            <br />
+            <p>
+              <span>Nodejs</span>를 사용하여 개발할 수 있습니다.
+            </p>
           </Lang>
+          <ImgTool>
+            <h3>Image Edit Tool</h3>
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMjFfMTcy/MDAxNTc0MzM0MDc2Nzk0.e8pMq16clsY1YxVLCDkh2L1IOfc9zq5x7XyxzMIkRoAg.B2k1RWDVVRy02emeuUova8tZmyC9Ha6tqN3wKSYdVwog.PNG.nanona3260/2020.png?type=w800"
+              width="180px"
+              height="200px"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
+              width="180px"
+              height="200px"
+            />
+            <p>
+              Adobe Photoshop, XD를 이용하여{" "}
+              <span>이미지 편집, 웹사이트 디자인</span>을 할 수 있습니다.
+            </p>
+          </ImgTool>
         </Skill>
       </SkillWrap>
-      <StudyWrap>
-        <Study>학원 수료 과정 보여주기</Study>
-      </StudyWrap>
-      <ProjectGo>프로젝트 가기</ProjectGo>
+
+      <ProjectGo>
+        <Link to="/project">
+          <ProjectScroll>✔ 프로젝트 보러가기 ✔</ProjectScroll>
+        </Link>
+      </ProjectGo>
     </AboutmeWrap>
   );
 };
