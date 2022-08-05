@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <HelmetProvider>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Globalstyle />
           <Header />
           <Routes>
@@ -20,7 +20,6 @@ function App() {
             <Route path="/project" element={<Project />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-          {/* <Footer /> */}
         </Router>
       </HelmetProvider>
     </>
