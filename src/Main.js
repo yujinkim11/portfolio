@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { mainStyle } from "./Style/Globalstyle";
 import coding from "./images/coding.png";
 import { Project } from "./Project";
@@ -78,11 +78,18 @@ const Git = styled.div`
 `;
 
 const ProjectScroll = styled.div`
-  margin-top: 150px;
+  margin-top: 80px;
   text-align: center;
   font-size: 26px;
   margin-bottom: 200px;
-
+  animation: move 2s alternate infinite;
+  @keyframes move {
+    0% {
+    }
+    100% {
+      margin-top: 50px;
+    }
+  }
   :hover {
     color: ${mainStyle.point};
     cursor: pointer;

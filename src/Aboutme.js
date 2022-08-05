@@ -54,6 +54,8 @@ const SkillWrap = styled.div`
 `;
 const Skill = styled.div``;
 
+const Lang = styled.div``;
+
 const StudyWrap = styled.div`
   margin-top: 100px;
   padding: ${mainStyle.padding};
@@ -87,15 +89,12 @@ export const Aboutme = () => {
               프론트엔드 개발자의 매력을 느끼게 되었고 개발자의 꿈을 가지게
               되었습니다.
               <br />
-              배우는 것과 그 지식을 써서 무언가를 만들어내는게 재미있고
-              즐겁습니다.
-              <br />
-              이전에 카페에서 직원으로 근무할 때는 제과제빵 자격증을 공부하며
-              필기 시험에 합격하였고, 개발자의 꿈을 꾸면서 photoshop을 배우고
-              자격증 시험을 쳤습니다.
-              <br />
               새로운 것을 배우고 익히는 것에 거부감이 없고 오히려 그 과정에서
               즐거움을 느낍니다.
+              <br />
+              이전에 카페에서 직원으로 근무할 때는 제과제빵 자격증을 공부하며
+              필기 시험에 합격하였고, 개발자의 꿈을 꾸면서 UIUX에 관심을
+              가지면서 포토샵을 배우고 자격증 시험을 쳤습니다.
               <br />
               그렇게 익힌 지식들을 실무에서, 제가 직접 사용해낼 때 더욱 더
               뿌듯함을 얻습니다.
@@ -120,7 +119,20 @@ export const Aboutme = () => {
         </Right>
       </BoxWrap>
       <SkillWrap>
-        <Skill>스킬</Skill>
+        <Skill>
+          <h3>Skill</h3>
+          <Lang>
+            <img
+              src="https://t1.daumcdn.net/cfile/tistory/2149683A58CA6BF313"
+              width="200px"
+              hight="180px"
+            ></img>
+            <img src="" width="200px" hight="180px" />
+            <img src="" width="200px" hight="180px" />
+            <img src="" width="200px" hight="180px" />
+            <img src="" width="200px" hight="180px" />
+          </Lang>
+        </Skill>
       </SkillWrap>
       <StudyWrap>
         <Study>학원 수료 과정 보여주기</Study>
