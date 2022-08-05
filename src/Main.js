@@ -127,7 +127,7 @@ export const Main = () => {
               </a>
               <a
                 target="_blank"
-                href="https://github.com/yujinkim11"
+                href="https://github.com/yujinkim11/"
                 className="github"
               >
                 <Git>Git</Git>
