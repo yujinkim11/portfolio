@@ -77,7 +77,7 @@ const Git = styled.div`
 `;
 
 const ProjectScroll = styled.div`
-  margin-top: 80px;
+  margin-top: 50px;
   text-align: center;
   font-size: 26px;
   margin-bottom: 200px;
@@ -86,7 +86,7 @@ const ProjectScroll = styled.div`
     0% {
     }
     100% {
-      margin-top: 50px;
+      transform: translateY(50px);
     }
   }
   :hover {
@@ -95,7 +95,7 @@ const ProjectScroll = styled.div`
   }
 `;
 
-const WhiteSpce = styled.div`
+const WhiteSpace = styled.div`
   height: 250px;
 `;
 
@@ -127,11 +127,11 @@ export const Main = () => {
             </Img>
           </Right>
         </MainWrap>
-        <ProjectScroll onClick={() => window.scrollTo({ top: 1400 })}>
+        <ProjectScroll onClick={() => window.scrollTo({ top: 1100 })}>
           ⇓ 프로젝트 보러가기 ⇓
         </ProjectScroll>
         <Project />
-        <WhiteSpce />
+        <WhiteSpace />
       </AllWrap>
     </>
   );
