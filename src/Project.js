@@ -234,18 +234,17 @@ export const Project = () => {
                   <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
                 <Link>
-                  <Site>
-                    <a
-                      target="_blank"
-                      href="https://yujinkim11.github.io/YJ-Login/"
-                    >
-                      {" "}
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                  </Site>
                   <a
                     target="_blank"
-                    href="https://github.com/yujinkim11/YJ-login"
+                    href="https://yujinkim11.github.io/YJ-Login/"
+                  >
+                    <Site>
+                      <i class="fa-solid fa-link"></i>
+                    </Site>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/yujinkim11/YJ-Login/"
                   >
                     <Github>
                       <i class="fa-brands fa-square-github"></i>
@@ -326,14 +325,14 @@ export const Project = () => {
                   <p>REACT, Nodejs, HTML, CSS, JAVASCRIPT</p>
                 </Skill>
                 <Link>
-                  <Site>
-                    <a
-                      target="_blank"
-                      href="https://yujinkim11.github.io/paikdabang/"
-                    >
+                  <a
+                    target="_blank"
+                    href="https://yujinkim11.github.io/paikdabang/"
+                  >
+                    <Site>
                       <i class="fa-solid fa-link"></i>
-                    </a>
-                  </Site>
+                    </Site>
+                  </a>
                   <a
                     target="_blank"
                     href="https://github.com/yujinkim11/paikdabang"

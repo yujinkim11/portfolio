@@ -11,11 +11,15 @@ function App() {
   return (
     <>
       <HelmetProvider>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <Globalstyle />
           <Header />
           <Routes>
-            <Route path="/" element={<Main />} />
+            <Route
+              basename={process.env.PUBLIC_URL}
+              path="/"
+              element={<Main />}
+            />
             <Route path="/aboutme" element={<Aboutme />} />
             <Route path="/project" element={<Project />} />
             <Route path="/contact" element={<Contact />} />
