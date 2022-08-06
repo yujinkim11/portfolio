@@ -4,6 +4,7 @@ import logo from "./images/logo.jpg";
 import { Link } from "react-router-dom";
 
 const HeaderWrap = styled.div`
+  font-family: "Black Han Sans", sans-serif;
   margin-top: 10px;
   padding: ${mainStyle.padding};
   height: 100px;

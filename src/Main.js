@@ -80,6 +80,7 @@ const Git = styled.div`
 `;
 
 const ProjectScroll = styled.div`
+  font-family: "Black Han Sans", sans-serif;
   margin-top: 50px;
   text-align: center;
   font-size: 26px;

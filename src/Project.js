@@ -20,9 +20,10 @@ const ProjectWrap = styled.div`
 `;
 
 const Title = styled.h3`
+  font-family: "Black Han Sans", sans-serif;
   margin: 100px 0;
   font-size: 50px;
-  font-weight: 700;
+
   text-align: center;
   span {
     font-size: 65px;
@@ -209,7 +210,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>로그인 페이지</ProjectTitle>
-                <Team>개인 프로젝트 | 2022.05~ </Team>
+                <Team>개인 프로젝트 | 2022.07.21 ~ 2022.07.29 </Team>
                 <ProjectImg
                   style={{
                     background: `url(${login}) no-repeat center / cover`,

@@ -60,6 +60,9 @@ const SkillWrap = styled.div`
 const Skill = styled.div`
   font-size: 40px;
   font-weight: 700;
+  h3 {
+    font-family: "Black Han Sans", sans-serif;
+  }
 `;
 
 const Lang = styled.div`
@@ -128,7 +131,7 @@ const ProjectScroll = styled.div`
   text-align: center;
   font-size: 26px;
   margin-bottom: 100px;
-
+  font-family: "Black Han Sans", sans-serif;
   :hover {
     color: ${mainStyle.point};
     cursor: pointer;
