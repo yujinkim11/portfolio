@@ -124,13 +124,13 @@ const Study = styled.div`
 
 const ProjectGo = styled.div`
   text-align: center;
-  margin-top: 500px;
+  margin-top: 600px;
 `;
 
 const ProjectScroll = styled.div`
   text-align: center;
   font-size: 26px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   font-family: "Black Han Sans", sans-serif;
   :hover {
     color: ${mainStyle.point};
@@ -267,7 +267,6 @@ export const Aboutme = () => {
           </ImgTool>
         </Skill>
       </SkillWrap>
-
       <ProjectGo>
         <Link to="/project">
           <ProjectScroll>✔ 프로젝트 보러가기 ✔</ProjectScroll>
