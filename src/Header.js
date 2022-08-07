@@ -11,9 +11,18 @@ const HeaderWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    padding: 0 0px;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+  }
 `;
 const Logo = styled.h3`
   font-size: 35px;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 const MenuWrap = styled.ul`
   display: flex;
@@ -23,6 +32,15 @@ const MenuWrap = styled.ul`
     margin-left: 50px;
     :hover {
       color: ${mainStyle.point};
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .home {
+      margin-left: 0px;
+    }
+    li {
+      margin-left: 15px;
+      font-size: 15px;
     }
   }
 `;
@@ -37,7 +55,7 @@ export const Header = () => {
       </Link>
       <MenuWrap>
         <Link to={"/"}>
-          <li>HOME</li>
+          <li className="home">HOME</li>
         </Link>
         <Link to={"/aboutme"}>
           <li>ABOUT ME</li>
