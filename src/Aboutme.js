@@ -6,23 +6,39 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const AboutmeWrap = styled.div``;
+const AboutmeWrap = styled.div`
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+`;
 
 const BoxWrap = styled.div`
   padding: ${mainStyle.padding};
   display: flex;
   align-items: center;
   margin-top: 70px;
+  @media screen and (max-width: 500px) {
+    padding: 0;
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
   width: 600px;
   height: 600px;
+  @media screen and (max-width: 500px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 const Right = styled.div`
   width: 800px;
   margin-left: 80px;
+  @media screen and (max-width: 500px) {
+    width: 90%;
+    margin-left: 0;
+  }
 `;
 const AboutCon = styled.h3`
   h4 {
@@ -36,6 +52,18 @@ const AboutCon = styled.h3`
     font-weight: 300;
   }
   margin-bottom: 50px;
+  @media screen and (max-width: 500px) {
+    h4 {
+      font-size: 24px;
+      line-height: 30px;
+      margin: 10px 0;
+      text-align: center;
+    }
+    p {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
 `;
 
 const Future = styled.p`
@@ -49,6 +77,34 @@ const Future = styled.p`
   line-height: 30px;
   font-weight: 300;
   margin-bottom: 50px;
+  @media screen and (max-width: 500px) {
+    h5 {
+      font-size: 24px;
+      text-align: center;
+    }
+    font-size: 15px;
+    line-height: 24px;
+  }
+`;
+
+const Study = styled.div`
+  h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  @media screen and (max-width: 500px) {
+    h5 {
+      font-size: 24px;
+      text-align: center;
+    }
+    font-size: 15px;
+    line-height: 24px;
+  }
 `;
 
 const SkillWrap = styled.div`
@@ -62,6 +118,8 @@ const Skill = styled.div`
   font-weight: 700;
   h3 {
     font-family: "Black Han Sans", sans-serif;
+  }
+  @media screen and (max-width: 500px) {
   }
 `;
 
@@ -108,18 +166,6 @@ const ImgTool = styled.div`
     font-weight: 500;
     color: ${mainStyle.point};
   }
-`;
-
-const Study = styled.div`
-  h5 {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 300;
 `;
 
 const ProjectGo = styled.div`
