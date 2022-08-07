@@ -9,19 +9,24 @@ const ContactWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 const Box = styled.div`
   width: 450px;
   height: 300px;
   background-color: white;
   display: flex;
-
   justify-content: center;
+  @media screen and (max-width: 500px) {
+    width: 350px;
+    height: 250px;
+  }
 `;
 const Con = styled.div`
   display: flex;
   flex-direction: column;
-
   align-items: center;
   p {
     width: 350px;
@@ -50,6 +55,19 @@ const Con = styled.div`
     cursor: pointer;
     :hover {
       color: ${mainStyle.point};
+    }
+  }
+  @media screen and (max-width: 500px) {
+    p {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 50px;
+      margin-top: 10px;
+    }
+    h4 {
+      margin-top: 30px;
+      font-size: 20px;
     }
   }
 `;
