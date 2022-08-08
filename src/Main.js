@@ -16,6 +16,10 @@ const MainWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    padding: 0 30px;
+    flex-direction: column;
+  }
 `;
 const Left = styled.div`
   margin-left: 100px;
@@ -25,10 +29,21 @@ const Left = styled.div`
     font-weight: 900;
     margin-bottom: 50px;
   }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    margin-left: 0;
+    h3 {
+      font-size: 30px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+  }
 `;
 
 const Title = styled.h3`
   font-size: 70px;
+  @media screen and (max-width: 500px) {
+  }
 `;
 
 const Right = styled.div`
@@ -38,6 +53,9 @@ const Img = styled.div`
   width: 660px;
   height: 660px;
   background-color: rgba(0, 0, 0, 0.5);
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Button = styled.div`
@@ -97,10 +115,23 @@ const ProjectScroll = styled.div`
     color: ${mainStyle.point};
     cursor: pointer;
   }
+  @media screen and (max-width: 500px) {
+    margin-top: 70px;
+    @keyframes move {
+      0% {
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  }
 `;
 
 const WhiteSpace = styled.div`
   height: 250px;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const Main = () => {
