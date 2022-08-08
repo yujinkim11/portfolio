@@ -17,6 +17,9 @@ import rsp from "./images/rsp.png";
 
 const ProjectWrap = styled.div`
   padding: ${mainStyle.padding};
+  @media screen and (max-width: 500px) {
+    padding: 0 30px;
+  }
 `;
 
 const Title = styled.h3`
@@ -29,37 +32,63 @@ const Title = styled.h3`
     font-size: 65px;
     color: ${mainStyle.point};
   }
+  @media screen and (max-width: 500px) {
+    font-size: 45px;
+    span {
+      font-size: 50px;
+    }
+  }
 `;
 const Projects = styled.div`
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 
 const SwiperWrap = styled.div`
   display: flex;
   margin-bottom: 50px;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 
 const ProjectCon = styled.div`
   width: 45%;
   padding: 0 60px;
+  @media screen and (max-width: 500px) {
+    padding: 0;
+  }
 `;
 
 const ProjectTitle = styled.h1`
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 20px;
+  @media screen and (max-width: 500px) {
+    font-size: 30px;
+  }
 `;
 const Team = styled.p`
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 50px;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
 `;
 
 const ProjectImg = styled.div`
   width: 600px;
   height: 500px;
   background-color: #1d1d1d;
+  @media screen and (max-width: 500px) {
+    width: 320px;
+    height: 220px;
+  }
 `;
 
 const ProjectDetail = styled.div`
@@ -67,10 +96,17 @@ const ProjectDetail = styled.div`
   font-size: 24px;
   font-weight: 500;
   line-height: 35px;
+  @media screen and (max-width: 500px) {
+    font-size: 10px;
+    line-height: 20px;
+  }
 `;
 const DetailCon = styled.h3`
   width: 90%;
   margin-top: 135px;
+  @media screen and (max-width: 500px) {
+    width: 30%;
+  }
 `;
 
 const Skill = styled.div`
@@ -79,6 +115,12 @@ const Skill = styled.div`
   p {
     font-size: 20px;
     margin-top: 10px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+    p {
+      font-size: 10px;
+    }
   }
 `;
 
@@ -93,12 +135,19 @@ const Site = styled.div`
   :hover {
     color: ${mainStyle.point};
   }
+  @media screen and (max-width: 500px) {
+    font-size: 25px;
+    margin-right: 15px;
+  }
 `;
 const Github = styled.div`
   transition: 0.5s;
   cursor: pointer;
   :hover {
     color: ${mainStyle.point};
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 25px;
   }
 `;
 
