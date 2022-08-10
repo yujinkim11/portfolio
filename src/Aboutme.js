@@ -307,7 +307,7 @@ export const Aboutme = () => {
             </p>
             <br />
             <p>
-              <span>Nodejs</span>를 사용하여 개발할 수 있습니다.
+              <span>Node.js</span>를 사용하여 개발할 수 있습니다.
             </p>
           </Lang>
           <ImgTool data-aos="fade-down" data-aos-duration="2000">
