@@ -18,7 +18,7 @@ import rsp from "./images/rsp.png";
 const ProjectWrap = styled.div`
   padding: ${mainStyle.padding};
   @media screen and (max-width: 500px) {
-    padding: 0 30px;
+    padding: 0 10px 0 10px;
   }
 `;
 
@@ -33,9 +33,9 @@ const Title = styled.h3`
     color: ${mainStyle.point};
   }
   @media screen and (max-width: 500px) {
-    font-size: 45px;
+    font-size: 40px;
     span {
-      font-size: 50px;
+      font-size: 45px;
     }
   }
 `;
@@ -52,7 +52,6 @@ const SwiperWrap = styled.div`
   display: flex;
   margin-bottom: 50px;
   @media screen and (max-width: 500px) {
-    width: 50%;
     flex-direction: column;
   }
 `;
@@ -62,6 +61,8 @@ const ProjectCon = styled.div`
   padding: 0 60px;
   @media screen and (max-width: 500px) {
     padding: 0;
+    width: 100%;
+    text-align: center;
   }
 `;
 
@@ -78,7 +79,7 @@ const Team = styled.p`
   font-weight: 500;
   margin-bottom: 50px;
   @media screen and (max-width: 500px) {
-    font-size: 15px;
+    font-size: 18px;
   }
 `;
 
@@ -87,8 +88,8 @@ const ProjectImg = styled.div`
   height: 500px;
   background-color: #1d1d1d;
   @media screen and (max-width: 500px) {
-    width: 320px;
-    height: 220px;
+    width: 370px;
+    height: 240px;
   }
 `;
 
@@ -98,16 +99,18 @@ const ProjectDetail = styled.div`
   font-weight: 500;
   line-height: 35px;
   @media screen and (max-width: 500px) {
-    font-size: 12px;
-    line-height: 20px;
-    width: 50%;
+    font-size: 16px;
+    line-height: 25px;
+    width: 100%;
+    text-align: center;
   }
 `;
 const DetailCon = styled.h3`
   width: 90%;
   margin-top: 135px;
   @media screen and (max-width: 500px) {
-    width: 30%;
+    width: 90%;
+    margin-left: 10px;
   }
 `;
 
@@ -120,8 +123,9 @@ const Skill = styled.div`
   }
   @media screen and (max-width: 500px) {
     font-size: 20px;
+    margin-right: 20px;
     p {
-      font-size: 10px;
+      font-size: 16px;
     }
   }
 `;
@@ -129,6 +133,9 @@ const Skill = styled.div`
 const Link = styled.div`
   display: flex;
   font-size: 40px;
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+  }
 `;
 const Site = styled.div`
   margin-right: 30px;
@@ -174,6 +181,9 @@ export const Project = () => {
           slidesPerView={1}
           modules={[Navigation]}
           navigation={{ clickable: true }}
+          style={{
+            width: "100%",
+          }}
         >
           <SwiperSlide>
             <SwiperWrap>
