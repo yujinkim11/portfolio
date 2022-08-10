@@ -44,6 +44,7 @@ const Projects = styled.div`
   justify-content: space-between;
   @media screen and (max-width: 500px) {
     flex-direction: column;
+    width: 100vw;
   }
 `;
 
@@ -51,7 +52,7 @@ const SwiperWrap = styled.div`
   display: flex;
   margin-bottom: 50px;
   @media screen and (max-width: 500px) {
-    width: 100%;
+    width: 50%;
     flex-direction: column;
   }
 `;
@@ -97,8 +98,9 @@ const ProjectDetail = styled.div`
   font-weight: 500;
   line-height: 35px;
   @media screen and (max-width: 500px) {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 20px;
+    width: 50%;
   }
 `;
 const DetailCon = styled.h3`
