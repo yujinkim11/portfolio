@@ -112,6 +112,10 @@ const SkillWrap = styled.div`
   height: 80vh;
   padding: ${mainStyle.padding};
   text-align: center;
+  @media screen and (max-width: 500px) {
+    padding: 0 20px;
+    text-align: center;
+  }
 `;
 const Skill = styled.div`
   font-size: 40px;
@@ -126,6 +130,8 @@ const Skill = styled.div`
 const Lang = styled.div`
   margin-top: 50px;
   img {
+    width: 180px;
+    height: 200px;
     margin-right: 30px;
     :nth-child(5) {
       margin-right: 0;
@@ -143,6 +149,18 @@ const Lang = styled.div`
     font-weight: 500;
     color: ${mainStyle.point};
   }
+  @media screen and (max-width: 500px) {
+    img {
+      width: 130px;
+      height: 130px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
 `;
 
 const ImgTool = styled.div`
@@ -150,6 +168,8 @@ const ImgTool = styled.div`
   font-size: 40px;
   font-weight: 700;
   img {
+    width: 180px;
+    height: 200px;
     margin-top: 70px;
     :nth-child(2) {
       margin-right: 30px;
@@ -166,11 +186,25 @@ const ImgTool = styled.div`
     font-weight: 500;
     color: ${mainStyle.point};
   }
+  @media screen and (max-width: 500px) {
+    margin-top: 120px;
+    img {
+      width: 130px;
+      height: 130px;
+    }
+    p {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
 `;
 
 const ProjectGo = styled.div`
   text-align: center;
   margin-top: 600px;
+  @media screen and (max-width: 500px) {
+    margin-top: 1100px;
+  }
 `;
 
 const ProjectScroll = styled.div`
@@ -181,6 +215,8 @@ const ProjectScroll = styled.div`
   :hover {
     color: ${mainStyle.point};
     cursor: pointer;
+  }
+  @media screen and (max-width: 500px) {
   }
 `;
 
@@ -247,31 +283,11 @@ export const Aboutme = () => {
             Skill
           </h3>
           <Lang data-aos="fade-down" data-aos-duration="2000">
-            <img
-              src="https://t1.daumcdn.net/cfile/tistory/2149683A58CA6BF313"
-              width="180px"
-              height="200px"
-            />
-            <img
-              src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw"
-              width="180px"
-              height="200px"
-            />
-            <img
-              src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo"
-              width="180px"
-              height="200px"
-            />
-            <img
-              src="https://www.nicepng.com/png/detail/222-2224705_react-js-logo.png"
-              width="180px"
-              height="200px"
-            />
-            <img
-              src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FDGM2Y%2FbtqwIi3c40a%2FtbVlnqOBH5ovawaVBCmEF0%2Fimg.png"
-              width="180px"
-              height="200px"
-            />
+            <img src="https://t1.daumcdn.net/cfile/tistory/2149683A58CA6BF313" />
+            <img src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw" />
+            <img src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo" />
+            <img src="https://www.nicepng.com/png/detail/222-2224705_react-js-logo.png" />
+            <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FDGM2Y%2FbtqwIi3c40a%2FtbVlnqOBH5ovawaVBCmEF0%2Fimg.png" />
             <p className="first">
               <span>ES6 이상의 문법</span> 사용하여 자바스크립트를 사용할 수
               있습니다.
@@ -296,16 +312,8 @@ export const Aboutme = () => {
           </Lang>
           <ImgTool data-aos="fade-down" data-aos-duration="2000">
             <h3>Image Edit Tool</h3>
-            <img
-              src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMjFfMTcy/MDAxNTc0MzM0MDc2Nzk0.e8pMq16clsY1YxVLCDkh2L1IOfc9zq5x7XyxzMIkRoAg.B2k1RWDVVRy02emeuUova8tZmyC9Ha6tqN3wKSYdVwog.PNG.nanona3260/2020.png?type=w800"
-              width="180px"
-              height="200px"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
-              width="180px"
-              height="200px"
-            />
+            <img src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMjFfMTcy/MDAxNTc0MzM0MDc2Nzk0.e8pMq16clsY1YxVLCDkh2L1IOfc9zq5x7XyxzMIkRoAg.B2k1RWDVVRy02emeuUova8tZmyC9Ha6tqN3wKSYdVwog.PNG.nanona3260/2020.png?type=w800" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png" />
             <p>
               Adobe Photoshop, XD를 이용하여{" "}
               <span>이미지 편집, 웹사이트 디자인</span>을 할 수 있습니다.
