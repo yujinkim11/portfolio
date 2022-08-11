@@ -141,14 +141,14 @@ export const Main = () => {
   return (
     <>
       <AllWrap>
-        <MainWrap data-aos="fade-down" data-aos-duration="2000">
+        <MainWrap>
           <Left>
-            <Title>
+            <Title data-aos="fade-down" data-aos-duration="2000">
               <h3>끊임없이 성장하는</h3>
               <h3>프론트엔드 개발자</h3>
               <h3>김유진입니다.</h3>
             </Title>
-            <Button>
+            <Button data-aos="fade-down" data-aos-duration="2000">
               <a
                 target="_blank"
                 href="https://drive.google.com/file/d/1smkWjyyPrOMoxt_HX-BN9OHJdG99f49J/view?usp=sharing"
