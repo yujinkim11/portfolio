@@ -321,7 +321,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>가위바위보 게임</ProjectTitle>
-                <Team>개인 프로젝트 | 2022.07.15 ~ 진행중 </Team>
+                <Team>개인 프로젝트 | 7/27 ~ 8/4 </Team>
                 <ProjectImg
                   style={{
                     background: `url(${rsp}) no-repeat center / cover`,
@@ -347,6 +347,14 @@ export const Project = () => {
                   <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
                 <Link>
+                  <a
+                    target="_blank"
+                    href="https://yujinkim11.github.io/rockscissorpaper/"
+                  >
+                    <Site>
+                      <i class="fa-solid fa-link"></i>
+                    </Site>
+                  </a>
                   <a
                     target="_blank"
                     href="https://github.com/yujinkim11/rockscissorpaper"
