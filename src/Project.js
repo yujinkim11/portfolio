@@ -210,7 +210,7 @@ export const Project = () => {
                 </DetailCon>
                 <Skill>
                   사용 언어
-                  <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
+                  <p>REACT, Node.js, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
                 <Link>
                   <Site>
@@ -249,7 +249,7 @@ export const Project = () => {
                 <Skill>
                   사용 언어
                   <br />
-                  <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
+                  <p>REACT, Node.js, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
                 <Link>
                   <a target="_blank" href="https://yujinkim11.github.io/enjoy/">
@@ -293,7 +293,7 @@ export const Project = () => {
                 <Skill>
                   사용 언어
                   <br />
-                  <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
+                  <p>REACT, Node.js, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
                 <Link>
                   <a
@@ -344,7 +344,7 @@ export const Project = () => {
                 <Skill>
                   사용 언어
                   <br />
-                  <p>REACT, Nodejs, JAVASCRIPT, HTML, CSS</p>
+                  <p>REACT, Node.js, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
                 <Link>
                   <a
@@ -392,7 +392,7 @@ export const Project = () => {
                 <Skill>
                   사용 언어
                   <br />
-                  <p>REACT, Nodejs, HTML, CSS, JAVASCRIPT</p>
+                  <p>REACT, Node.js, HTML, CSS, JAVASCRIPT</p>
                 </Skill>
                 <Link>
                   <a
