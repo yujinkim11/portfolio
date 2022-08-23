@@ -212,14 +212,14 @@ export const Project = () => {
                   사용 언어
                   <p>REACT, Node.js, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
-                <Link>
+                {/* <Link>
                   <Site>
                     <i class="fa-solid fa-link"></i>
                   </Site>
                   <Github>
                     <i class="fa-brands fa-square-github"></i>
                   </Github>
-                </Link>
+                </Link> */}
               </ProjectDetail>
             </SwiperWrap>
           </SwiperSlide>
