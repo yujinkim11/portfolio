@@ -204,6 +204,9 @@ export const Project = () => {
                   <br />
                   Git으로 협업하는 방법을 익히기 위해 진행했습니다.
                   <br />
+                  Branch로 작업하고 merge 후 pull request를 하는 것을
+                  익혔습니다.
+                  <br />
                   <br />
                   팀원은 총 4명이였으며, 제가 맡은 역할은 푸터 & 고객지원
                   페이지입니다.
