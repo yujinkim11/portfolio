@@ -72,6 +72,7 @@ const ProjectTitle = styled.h1`
   margin-bottom: 20px;
   @media screen and (max-width: 500px) {
     font-size: 30px;
+    margin-left: -30px;
   }
 `;
 const Team = styled.p`
@@ -80,6 +81,8 @@ const Team = styled.p`
   margin-bottom: 50px;
   @media screen and (max-width: 500px) {
     font-size: 18px;
+    text-align: center;
+    margin-left: -30px;
   }
 `;
 
