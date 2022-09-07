@@ -192,7 +192,7 @@ export const Project = () => {
             <SwiperWrap>
               <ProjectCon>
                 <ProjectTitle>다이슨 리뉴얼</ProjectTitle>
-                <Team>팀 프로젝트 | 2022.07.29 ~ 진행중</Team>
+                <Team>팀 프로젝트 | 2022.07.29 ~ 2022.08.12</Team>
                 <ProjectImg
                   style={{
                     background: `url(${dyson}) no-repeat center / cover`,
@@ -212,20 +212,20 @@ export const Project = () => {
                   <br />
                   <br />
                   팀원은 총 4명이였으며, 제가 맡은 역할은 푸터 & 고객지원
-                  페이지입니다.
+                  페이지를 코딩했으며 반응형 작업까지 진행하였습니다.
                 </DetailCon>
                 <Skill>
                   사용 언어
                   <p>REACT, Node.js, JAVASCRIPT, HTML, CSS</p>
                 </Skill>
-                {/* <Link>
+                <Link>
                   <Site>
                     <i class="fa-solid fa-link"></i>
                   </Site>
                   <Github>
                     <i class="fa-brands fa-square-github"></i>
                   </Github>
-                </Link> */}
+                </Link>
               </ProjectDetail>
             </SwiperWrap>
           </SwiperSlide>
